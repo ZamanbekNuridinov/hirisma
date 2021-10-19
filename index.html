@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="img/icons/planets.png">
+        <title>Welcome to Hirisma. Make yourself BEST! | Hirisma</title>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"/>
+
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Quicksand:wght@300;500;700&family=Georama:wght@400;500&display=swap" rel="stylesheet">
+        <!-- <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet"> -->
+
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        
+        <script src="https://kit.fontawesome.com/1bf8b34bc4.js"></script>
+
+        <link rel="stylesheet" href="css/basics.css">
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+    <body>
+        <header>
+            <a id="logo" href="#">
+                <img src="img/icons/newIcon.svg" alt="Hirisma logo">
+                <h1>Hirisma</h1>
+            </a>
+            
+            <nav>
+                <a href="#" class="nav-link active">Home</a>
+                <div class="dropdown dropdown-courses" data-dropdown>
+                    <button class="nav-link" data-dropdown-button>
+                        Courses
+                        <i class="fas fa-angle-down" data-arrow></i>
+                    </button>
+                    
+                    <div class="dropdown-menu">
+                        <h3>Search course</h3>
+                        <div class="search-bar">
+                            <form class="search-bar-form" action="search-course">
+                                <input id="searchCourse" type="text" placeholder="Course name">
+                                <i class="fas fa-search"></i>
+                            </form>
+                        </div>
+                        <h3>Popular courses</h3>
+                        <div class="coursesContainer">
+                            <div class="course" data-href="#">
+                                <img src="img/course_logo.png" alt="Course Image">
+                                <p>Course Name</p>
+                            </div>
+                            <div class="course" data-href="#">
+                                <img src="img/course_logo.png" alt="Course Image">
+                                <p>Course name logn name</p>
+                            </div>
+                            <div class="course" data-href="#">
+                                <img src="img/course_logo.png" alt="Course Image">
+                                <p>Short</p>
+                            </div>
+                            <div class="course" data-href="#">
+                                <img src="img/course_logo.png" alt="Course Image">
+                                <p>Course Name Very very Long</p>
+                            </div>
+                            <div class="course" data-href="#">
+                                <img src="img/course_logo.png" alt="Course Image">
+                                <p>Course Name</p>
+                            </div>
+                            <div class="course" data-href="#">
+                                <img src="img/course_logo.png" alt="Course Image">
+                                <p>Course Name</p>
+                            </div>
+                            <div class="course" data-href="#">
+                                <img src="img/course_logo.png" alt="Course Image">
+                                <p>Course</p>
+                            </div>
+                            <div class="course" data-href="#">
+                                <img src="img/course_logo.png" alt="Course Image">
+                                <p>Course</p>
+                            </div>
+                            <div class="course" data-href="#">
+                                <img src="img/course_logo.png" alt="Course Image">
+                                <p>Lorem, ipsum dolor.</p>
+                            </div>
+                            <div class="course" data-href="#">
+                                <img src="img/course_logo.png" alt="Course Image">
+                                <p>Course</p>
+                            </div>
+                            <div class="course" data-href="#">
+                                <img src="img/course_logo.png" alt="Course Image">
+                                <p>Course</p>
+                            </div>
+                            <div class="course" data-href="#">
+                                <img src="img/course_logo.png" alt="Course Image">
+                                <p>Lorem ipsum dolor sit amet.</p>
+                            </div>
+                            <div class="course" data-href="#">
+                                <img src="img/course_logo.png" alt="Course Image">
+                                <p>Course</p>
+                            </div>
+                            <div class="course" data-href="#">
+                                <img src="img/course_logo.png" alt="Course Image">
+                                <p>Course</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#" class="nav-link">Extension</a>
+                <a href="#" class="nav-link">Schools & Partners</a>
+                <a href="#" class="nav-link">Help</a>
+            </nav>
+
+            <div class="auth-container">
+                <div class="dropdown" data-dropdown>
+                    <button class="nav-link auth" data-dropdown-button><span>Log in<i class="fas fa-angle-down" data-arrow></i></span></button>
+
+                    <div class="dropdown-menu">
+                        <form action="login" class="dropdown-auth">
+                            <div class="userSelector">
+                                <span class="userType selected">
+                                    Student
+                                    <i class="fas fa-graduation-cap"></i>
+                                </span>
+                                <span class="userType">
+                                    Teacher
+                                    <i class="fas fa-bookmark"></i>
+                                </span>
+                                <div class="underline" data-selected-user = "Student"></div>
+                            </div>
+
+                            <div class="fill-in-container">
+                                <h4 data-placeholder = "Username">Username</h4>
+                                <input id="usernameFill" type="text">
+                            </div>
+
+                            <div class="fill-in-container">
+                                <h4 data-placeholder = "Password">Password</h4>
+                                <div class="password-container">
+                                    <input id="passwordFill" type="password">
+                                    <i class="far fa-eye-slash"></i>
+                                </div>
+                            </div>
+
+                            <div>
+                                <a href="#">Forgot Password?</a>
+                                <input type="submit" value="Log In">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <a href="#" class="nav-link auth"><span>Sign up</span></a>
+            </div>
+            
+            <div class="navbar-progress"></div>
+        </header>
+
+        <section class="intro">
+            <div class="intro-content">
+                <div class="intro-title">
+                    <h1>
+                        Welcome to <span>Hirisma</span>
+                    </h1>
+                    <h2>
+                       Make yourself BEST!
+                    </h2>
+                </div>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus eligendi veritatis alias sed molestias. Amet saepe molestias quo vero mollitia fugiat, ut itaque eum id, voluptate perspiciatis.
+                </p>
+                <div class="buttons-container">
+                    <button onClick="document.getElementById('startSection').scrollIntoView();" class="pushableButton">
+                        Learn more
+                    </button>
+                    <button class="pushableButton">
+                        Start working
+                    </button>
+                </div>
+            </div>
+            <iframe src="" title="YouTube video player" frameborder="0" allow="accelerometer"; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+
+        <section class="easyUseful" id="startSection">
+            <div class="easyUseful-head">
+                <h1>Easy &amp; Useful</h1>
+                <h4>Project Management Tool</h4>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti rerum fugit libero saepe labore. Aspernatur, minus perspiciatis alias aliquid modi, ipsam, sit dolores eum earum magnam in facere voluptate totam.
+                </p>
+            </div>
+
+            <div class="titles-container">
+                <div class="title">
+                    <div>
+                        <div class="container">
+                            <i class="fas fa-chess-knight"></i>
+                            <h5>Title about something</h5>
+                        </div>
+                        <i class="fas fa-chess-knight"></i>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam expedita quos laudantium nostrum, minus earum!</p>
+                    </div>
+                </div>
+                <div class="title">
+                    <div>
+                        <div class="container">
+                            <i class="fas fa-couch"></i>
+                            <h5>Title about something one more time</h5>
+                        </div>
+                        <i class="fas fa-couch"></i>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam expedita quos laudantium nostrum, minus earum! </p>
+                    </div>
+                </div>
+                <div class="title">
+                    <div>
+                        <div class="container">
+                            <i class="fas fa-anchor"></i>
+                            <h5>Title about something</h5>
+                        </div>
+                        <i class="fas fa-anchor"></i>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam expedita quos laudantium nostrum, minus earum! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam expedita quos laudantium nostrum, minus earum! Totam expedita quos laudantium nostrum, minus earum! Totam expedita quos laudantium nostrum, minus earum!</p>
+                    </div>
+                </div>
+                <div class="title">
+                    <div>
+                        <div class="container">
+                            <i class="fab fa-atlassian"></i>
+                            <h5>Title about something</h5>
+                        </div>
+                        <i class="fab fa-atlassian"></i>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam expedita quos laudantium nostrum, minus earum!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="statisticsBar">
+            <div class="statistic">
+                <i class="fas fa-building"></i>
+                <div>
+                    <span>120+</span>
+                    <span>Schools</span>
+                </div>
+            </div>
+            <div class="statistic">
+                <i class="fas fa-user"></i>
+                <div>
+                    <span>70000+</span>
+                    <span>Students</span>
+                </div>
+            </div>
+            <div class="statistic">
+                <i class="fas fa-user-tie"></i>
+                <div>
+                    <span>230+</span>
+                    <span>Teachers</span>
+                </div>
+            </div>
+            <div class="statistic">
+                <i class="fas fa-book"></i>
+                <div>
+                    <span>550+</span>
+                    <span>Courses</span>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-left">
+                <div>
+                    <h1>Hirisma</h1>
+                    <img src="img/icons/newIcon.svg">
+                </div>
+                <h3>About Us</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde voluptatem saepe at, tempora obcaecati cupiditate dolores quibusdam corporis illum vel.</p>
+            </div>
+            <div class="footer-center">
+                <h3>Address</h3>
+                <p><i class="fas fa-map-marker-alt"></i> --address--</p>
+                <p><i class="fas fa-phone"></i> --phone--</p>
+                <p><i class="fas fa-envelope"></i> --email--</p>
+            </div>
+            <div class="footer-feedback">
+                <form class="inputContainer"> 
+                    <h3>Contact Us</h3>
+                    <input id="emailInput" type="text" placeholder="Email">
+                    <textarea id="messageInput" placeholder="Message"></textarea>
+                    <input type="submit" value="SEND">
+                </form>
+
+            </div>
+            <div class="footer-right">
+                <h3>Social media</h3>
+                <div>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-dribbble"></i></a>
+                    <a href="#"><i class="fab fa-behance"></i></a>
+                </div>
+            </div>
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/slide.js"></script>
+        <script src="js/carousel.js"></script>
+        <script src="js/scroll.js"></script>
+    </body>
+</html>
